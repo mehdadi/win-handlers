@@ -1,0 +1,12 @@
+[package]
+name = "win-handlers"
+version = "0.1.0"
+authors = ["Mehrdad Montazeri <mehdadi@gmail.com>"]
+edition = "2018"
+crate-type = ["cdylib"]
+
+[dependencies.winapi]
+version = "0.3"
+features = ["winerror", "ioapiset", "minwinbase", "winbase", "namedpipeapi", "handleapi", "synchapi", "errhandlingapi"]
+
+[dependencies]
